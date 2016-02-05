@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Exercism Go</string>
+    <string name="hello_world">Hello World</string>
+    <string name="leap">Leap</string>
+    <string name="clock">Clock</string>
+    <string name="gigasecond">Gigasecond</string>
+    <string name="raindrops">Raindrops</string>
+    <string name="triangle">triangle</string>
+    <string name="difference_of_squares">Difference of Squares</string>
+    <string name="secret_handshake">Secret Handshake</string>
+    <string name="food_chain">Food Chain</string>
+    <string name="house">House</string>
+</resources>
