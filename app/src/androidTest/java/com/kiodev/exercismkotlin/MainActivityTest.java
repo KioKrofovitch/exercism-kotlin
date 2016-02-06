@@ -1,4 +1,4 @@
-package com.example.kio.exercismkotlin;
+package com.kiodev.exercismkotlin;
 
 import android.support.test.InstrumentationRegistry;
 import android.support.test.espresso.ViewInteraction;

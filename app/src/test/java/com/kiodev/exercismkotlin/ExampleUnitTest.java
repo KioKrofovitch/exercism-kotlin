@@ -1,4 +1,4 @@
-package com.example.kio.exercismkotlin;
+package com.kiodev.exercismkotlin;
 
 import org.junit.Test;
 
