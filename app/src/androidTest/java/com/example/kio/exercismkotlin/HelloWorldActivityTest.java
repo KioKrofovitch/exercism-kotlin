@@ -1,5 +1,6 @@
 package com.example.kio.exercismkotlin;
 
+import android.support.test.espresso.ViewInteraction;
 import android.support.test.rule.ActivityTestRule;
 import android.support.test.runner.AndroidJUnit4;
 
@@ -13,10 +14,8 @@ import static android.support.test.espresso.action.ViewActions.click;
 import static android.support.test.espresso.action.ViewActions.replaceText;
 import static android.support.test.espresso.assertion.ViewAssertions.matches;
 import static android.support.test.espresso.matcher.ViewMatchers.isDisplayed;
-import static android.support.test.espresso.matcher.ViewMatchers.withClassName;
-
+import static android.support.test.espresso.matcher.ViewMatchers.withId;
 import static android.support.test.espresso.matcher.ViewMatchers.withText;
-import static org.hamcrest.core.StringEndsWith.endsWith;
 
 /**
  * UI Tests for Hello World
@@ -30,35 +29,34 @@ public class HelloWorldActivityTest {
 
     @Test
     public void testUiExists(){
-        onView(withClassName(endsWith("EditText")))
-                .check(matches(isDisplayed()));
-
-        onView(withClassName(endsWith("Button")))
-                .check(matches(isDisplayed()));
-
-        onView(withClassName(endsWith("TextView")))
-                .check(matches(isDisplayed()));
+        onNameEditText().check(matches(isDisplayed()));
+        onGreetingButton().check(matches(isDisplayed()));
+        onGreetingText().check(matches(isDisplayed()));
     }
 
     @Test
     public void testEmptyGreeting(){
-        onView(withClassName(endsWith("EditText")))
-                .perform(clearText());
-
-        onView(withClassName(endsWith("Button"))).perform(click());
-
-        onView(withClassName(endsWith("TextView")))
-                .check(matches(withText("Hello, World!")));
+        onNameEditText().perform(clearText());
+        onGreetingButton().perform(click());
+        onGreetingText().check(matches(withText("Hello, World!")));
     }
 
     @Test
     public void testNamedGreeting(){
-        onView(withClassName(endsWith("EditText")))
-                .perform(replaceText("Kio Krofovitch"));
+        onNameEditText().perform(replaceText("Kio Krofovitch"));
+        onGreetingButton().perform(click());
+        onGreetingText().check(matches(withText("Hello, Kio Krofovitch!")));
+    }
 
-        onView(withClassName(endsWith("Button"))).perform(click());
+    private ViewInteraction onNameEditText(){
+        return onView(withId(R.id.edit_name));
+    }
 
-        onView(withClassName(endsWith("TextView")))
-                .check(matches(withText("Hellow, Kio Krofovitch!")));
+    private ViewInteraction onGreetingButton(){
+        return onView(withId(R.id.button_greeting));
+    }
+
+    private ViewInteraction onGreetingText(){
+        return onView(withId(R.id.text_hello_main));
     }
 }

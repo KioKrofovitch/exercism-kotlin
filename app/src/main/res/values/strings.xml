@@ -1,6 +1,11 @@
 <resources>
     <string name="app_name">Exercism Kotlin</string>
+
     <string name="hello_world">Hello World</string>
+    <string name="hello_world_formatted" formatted="false">Hello, %s!</string>
+    <string name="enter_name">Enter Name</string>
+    <string name="display_greeting">Display Greeting</string>
+
     <string name="leap">Leap</string>
     <string name="clock">Clock</string>
     <string name="gigasecond">Gigasecond</string>
