@@ -6,6 +6,10 @@ import kotlinx.android.synthetic.main.activity_hello_world.*
 
 /**
  * Hello World Activity
+ *
+ * Write a program that greets the user by name, or by saying "Hello, World!" if no name is given.
+ *
+ * http://exercism.io/exercises/go/hello-world/readme
  */
 class HelloWorldActivity : AppCompatActivity() {
 

@@ -11,6 +11,9 @@ If you are stuck, write a thing in Java & then convert to see the suggested Kotl
 
 Translator doesn't always pick the 'best' way to do stuff. See if that is true for intent, too.
 
+Direct access to text
+validateInput(edit_year.text.toString())
+
 Learn the Kotlin Language:
 https://kotlinlang.org/docs/tutorials/koans.html
 

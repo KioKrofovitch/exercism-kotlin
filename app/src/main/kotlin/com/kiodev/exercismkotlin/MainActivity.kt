@@ -15,5 +15,10 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, HelloWorldActivity::class.java)
             startActivity(intent)
         }
+
+        button_leap.setOnClickListener{
+            val intent = Intent(this, LeapYearActivity::class.java)
+            startActivity(intent)
+        }
     }
 }

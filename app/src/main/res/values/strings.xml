@@ -7,6 +7,12 @@
     <string name="display_greeting">Display Greeting</string>
 
     <string name="leap">Leap</string>
+    <string name="enter_year">Enter Year</string>
+    <string name="check_year">Check Year</string>
+    <string name="bad_data">Bad Data. Enter 4 digit year.</string>
+    <string name="leap_year">Leap Year</string>
+    <string name="non_leap_year">Non Leap Year</string>
+
     <string name="clock">Clock</string>
     <string name="gigasecond">Gigasecond</string>
     <string name="raindrops">Raindrops</string>
