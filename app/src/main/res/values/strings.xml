@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Exercism Go</string>
+    <string name="app_name">Exercism Kotlin</string>
     <string name="hello_world">Hello World</string>
     <string name="leap">Leap</string>
     <string name="clock">Clock</string>

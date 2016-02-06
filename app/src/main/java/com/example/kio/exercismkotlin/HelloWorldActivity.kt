@@ -1,4 +1,4 @@
-package com.example.kio.exercismgo
+package com.example.kio.exercismkotlin
 
 import android.os.Bundle
 import android.os.PersistableBundle
@@ -12,6 +12,7 @@ class HelloWorldActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?, persistentState: PersistableBundle?) {
         super.onCreate(savedInstanceState, persistentState)
         setContentView(R.layout.activity_hello_world)
+        setTitle(R.string.hello_world)
 
         text_hello_main.setText("Hello, Worlld!")
     }

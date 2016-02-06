@@ -1,4 +1,4 @@
-package com.example.kio.exercismgo
+package com.example.kio.exercismkotlin
 
 import android.content.Intent
 import android.os.Bundle
